@@ -1,7 +1,7 @@
 
 class MultiplyMatrix {
 	/**
-	 Класс обработки умножения матриц	 
+	 Matrix multiplication processing class	 
 	 **/
 	constructor(A,B){
 		this.A = A
@@ -28,7 +28,7 @@ class MultiplyMatrix {
 	
 }
 
-// Считывание данных с таблиц поля ввода
+// Read data from input field 
 function table_to_array(table_id) {
 	let myData = document.getElementById(table_id).rows;
 	let my_liste = [];
@@ -52,9 +52,9 @@ function table_to_array(table_id) {
 }
 
 class Generate {
-	/**
-	 Класс для создания таблиц с матрицами, их обработки	 
-	**/
+	/*
+	creating tables with matrices, processing them	 
+	*/
 	
 	// input matrix
 	input_matrix () {
@@ -138,7 +138,7 @@ class Generate {
 			res_table.appendChild(row);
 		}
 
-		// вывод
+		// win_output
 		if (document.getElementById("res_id")==null){
 			var titl = document.createElement("h2"); 
 			titl.appendChild(document.createTextNode("Result"));
@@ -165,4 +165,3 @@ let html_otter = function(){
 
 window.innerHTML
 
-// Прим. для преподавателя : с разметкой не игрался
