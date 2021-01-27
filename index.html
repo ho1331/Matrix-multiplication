@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- Скрипты писатьs перед закрывающимся боди -->
+    <div class='table_in'>
+        <div><p>Matrix Multiply</p>
+            <h3>Введите размер матриц:</h3>
+            <select id='size' onchange=html_getter()>
+                <option>n*n</option>
+                <option value=1>2x2</option>
+                <option value=2>3x3</option>
+                <option value=3>4x4</option>
+                <option value=4>5x5</option>
+            </select>
+    </div><br>
+
+    <div class="t_out">
+        <input type="button" name="multi" value="Умножение" onclick=html_otter()>
+    </div>
+    
+    <div class="footer"><p>&copy; Павел БРАГА (3 курс, заочная форма)</p></div>
+    <script src="main.js"></script>
+</body>
+</html>
